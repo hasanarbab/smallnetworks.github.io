@@ -3,20 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Small Networks | IT and network support in Melbourne</title>
-<meta name="description" content="Small Networks provides IT support, network design and security for Melbourne businesses.">
+<title>SmallNetworks | Computer, Wi-Fi and web services in Melbourne</title>
+<meta name="description" content="SmallNetworks helps Melbourne homes and small businesses with computer and software support, Wi-Fi and network installation, social media, website design and SEO.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 838 893%22 role=%22img%22 aria-label=%22SmallNetworks logo%22%3E  %3Ctitle%3ESmallNetworks%3C/title%3E  %3Cpath fill=%22%230559FC%22 fill-rule=%22evenodd%22 d=%22M372.0 283.0 L362.8 294.8 L358.2 311.5 L359.2 374.2 L363.0 389.0 L369.8 401.0 L831.2 776.2 L837.8 779.0 L837.8 279.2 L832.0 264.8 L824.0 253.2 L790.5 227.2 L771.5 219.0 L754.8 220.2 L744.5 224.8 L735.0 232.5 L726.5 247.0 L723.2 260.2 L722.2 532.5 L410.5 280.8 L403.5 277.2 L388.5 275.5Z M313.5 3.5 L288.5 7.2 L275.2 14.5 L43.2 174.5 L32.2 184.2 L22.2 200.5 L16.8 223.8 L17.8 319.2 L25.8 339.8 L41.2 357.5 L423.8 660.5 L432.5 670.0 L432.8 679.0 L420.5 691.2 L356.2 735.5 L341.5 742.8 L327.8 743.0 L313.5 735.2 L21.0 511.0 L17.5 512.5 L16.2 523.0 L18.0 646.2 L22.5 660.8 L28.2 670.8 L40.5 683.2 L297.5 873.5 L317.8 882.0 L334.5 883.8 L353.0 880.8 L377.5 867.8 L488.2 792.2 L542.5 751.8 L551.2 736.0 L555.8 716.0 L555.8 634.2 L552.8 617.8 L545.2 603.0 L534.8 590.8 L140.8 279.0 L136.5 272.5 L136.5 262.5 L139.5 256.5 L292.8 149.0 L305.2 143.0 L316.2 143.5 L325.5 148.0 L498.0 283.5 L513.8 290.8 L524.5 290.5 L535.8 285.8 L543.0 280.0 L552.0 266.8 L555.8 248.8 L554.5 188.2 L548.8 172.8 L543.5 164.8 L521.2 145.2 L350.8 15.2 L336.0 7.5Z%22/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
-    theme: {
-      extend: {
-        colors: { navy: { 950: '#050d21', 900: '#0a1a3a', 800: '#102a5c', 700: '#183a7a' }, brand: { DEFAULT: '#2563eb', light: '#4f8bff', soft: '#eaf1ff' } },
-        fontFamily: { display: ['Sora', 'system-ui', 'sans-serif'], sans: ['DM Sans', 'system-ui', 'sans-serif'] }
-      }
-    }
+    theme: { extend: {
+      colors: { navy: { 950: '#050d21', 900: '#0a1a3a', 800: '#102a5c', 700: '#183a7a' }, brand: { DEFAULT: '#0559fc', light: '#4f8bff', soft: '#eaf1ff' } },
+      fontFamily: { display: ['Sora', 'system-ui', 'sans-serif'], sans: ['DM Sans', 'system-ui', 'sans-serif'] }
+    } }
   }
 </script>
 <style>
@@ -24,33 +23,35 @@
   @keyframes flow { to { stroke-dashoffset: -28; } }
   .ping { transform-origin: center; transform-box: fill-box; animation: ping 2.8s ease-out infinite; }
   @keyframes ping { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(2.6); opacity: 0; } }
-  @media (prefers-reduced-motion: reduce) { .flow, .ping { animation: none; } html { scroll-behavior: auto; } }
+  .pop { animation: pop .5s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes pop { from { opacity: 0; transform: translateY(12px) scale(.96); } to { opacity: 1; transform: none; } }
+  .tick { stroke-dasharray: 30; stroke-dashoffset: 30; animation: draw .6s .25s ease-out forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  @media (prefers-reduced-motion: reduce) { .flow, .ping, .pop { animation: none; } .tick { animation: none; stroke-dashoffset: 0; } .animate-spin { animation-duration: 2s; } html { scroll-behavior: auto; } }
   :focus-visible { outline: 3px solid #4f8bff; outline-offset: 3px; }
 </style>
 </head>
 <body class="font-sans text-slate-700 bg-white antialiased">
 
+<svg width="0" height="0" class="absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 838 893"><path fill="#0559FC" fill-rule="evenodd" d="M372.0 283.0 L362.8 294.8 L358.2 311.5 L359.2 374.2 L363.0 389.0 L369.8 401.0 L831.2 776.2 L837.8 779.0 L837.8 279.2 L832.0 264.8 L824.0 253.2 L790.5 227.2 L771.5 219.0 L754.8 220.2 L744.5 224.8 L735.0 232.5 L726.5 247.0 L723.2 260.2 L722.2 532.5 L410.5 280.8 L403.5 277.2 L388.5 275.5Z M313.5 3.5 L288.5 7.2 L275.2 14.5 L43.2 174.5 L32.2 184.2 L22.2 200.5 L16.8 223.8 L17.8 319.2 L25.8 339.8 L41.2 357.5 L423.8 660.5 L432.5 670.0 L432.8 679.0 L420.5 691.2 L356.2 735.5 L341.5 742.8 L327.8 743.0 L313.5 735.2 L21.0 511.0 L17.5 512.5 L16.2 523.0 L18.0 646.2 L22.5 660.8 L28.2 670.8 L40.5 683.2 L297.5 873.5 L317.8 882.0 L334.5 883.8 L353.0 880.8 L377.5 867.8 L488.2 792.2 L542.5 751.8 L551.2 736.0 L555.8 716.0 L555.8 634.2 L552.8 617.8 L545.2 603.0 L534.8 590.8 L140.8 279.0 L136.5 272.5 L136.5 262.5 L139.5 256.5 L292.8 149.0 L305.2 143.0 L316.2 143.5 L325.5 148.0 L498.0 283.5 L513.8 290.8 L524.5 290.5 L535.8 285.8 L543.0 280.0 L552.0 266.8 L555.8 248.8 L554.5 188.2 L548.8 172.8 L543.5 164.8 L521.2 145.2 L350.8 15.2 L336.0 7.5Z"/></symbol>
+  <symbol id="tick" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
 <!-- Header -->
 <header class="fixed inset-x-0 top-0 z-50 bg-navy-950/90 backdrop-blur border-b border-white/10">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2 text-white font-display font-semibold text-lg">
-      <span class="grid place-items-center h-8 w-8 rounded-lg">
-        <img src="SmallNetworks-logo-850px.png" alt="Small Networks logo">
-        <!-- <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg> -->
-      </span>
-      Small Networks
+      <svg class="h-9 w-[34px] shrink-0" viewBox="0 0 838 893" aria-hidden="true"><use href="#logo"/></svg>
+      SmallNetworks
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300" aria-label="Main">
       <a href="#services" class="hover:text-white">Services</a>
       <a href="#why" class="hover:text-white">Why us</a>
       <a href="#contact" class="hover:text-white">Contact</a>
     </nav>
-    <!-- Replace the href with your Shopify store URL -->
-    <!-- <a href="https://YOUR-STORE.myshopify.com" target="_blank" rel="noopener"
-       class="inline-flex items-center gap-2 rounded-full bg-brand px-4 sm:px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition">
-      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-      Shop online
-    </a> -->
+    <a href="#contact" class="inline-flex items-center rounded-full bg-brand px-4 sm:px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition">Get in touch</a>
   </div>
 </header>
 
@@ -58,22 +59,21 @@
 
 <!-- Hero -->
 <section class="relative overflow-hidden bg-navy-900 pt-16">
-  <div class="absolute inset-0 opacity-40" style="background: radial-gradient(60% 50% at 80% 30%, #2563eb55, transparent), radial-gradient(40% 40% at 10% 90%, #183a7a, transparent);"></div>
+  <div class="absolute inset-0 opacity-40" style="background: radial-gradient(60% 50% at 80% 30%, #0559fc55, transparent), radial-gradient(40% 40% at 10% 90%, #183a7a, transparent);"></div>
   <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
     <div>
       <h1 class="font-display font-bold text-white text-4xl sm:text-5xl xl:text-6xl leading-[1.08] tracking-tight">
-        IT that keeps your business online.
+        Friendly tech help for Melbourne homes and small businesses.
       </h1>
       <p class="mt-6 text-lg text-slate-300 max-w-xl leading-relaxed">
-        Small Networks looks after your computers, Wi-Fi, security and backups, so your team can get on with work.
+        We install, maintain and fix your computers, software, Wi-Fi and networks. We also look after your social media, build your website and help customers find you on Google.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4">
-        <a href="#contact" class="inline-flex justify-center rounded-full bg-brand px-7 py-3.5 font-semibold text-white shadow-xl shadow-brand/30 hover:bg-brand-light transition">Get a free IT check-up</a>
+        <a href="#contact" class="inline-flex justify-center rounded-full bg-brand px-7 py-3.5 font-semibold text-white shadow-xl shadow-brand/30 hover:bg-brand-light transition">Ask us a question</a>
         <a href="#services" class="inline-flex justify-center rounded-full border border-white/25 px-7 py-3.5 font-semibold text-white hover:bg-white/10 transition">See our services</a>
       </div>
     </div>
 
-    <!-- Network illustration -->
     <div class="relative mx-auto w-full max-w-lg" aria-hidden="true">
       <svg viewBox="0 0 400 360" class="w-full h-auto">
         <g stroke="#4f8bff" stroke-width="1.5" fill="none" class="flow" opacity=".8">
@@ -83,8 +83,8 @@
           <circle cx="80" cy="70" r="16"/><circle cx="320" cy="60" r="16"/><circle cx="70" cy="260" r="16"/><circle cx="330" cy="270" r="16"/><circle cx="200" cy="320" r="14"/>
         </g>
         <g fill="#4f8bff"><circle cx="80" cy="70" r="5"/><circle cx="320" cy="60" r="5"/><circle cx="70" cy="260" r="5"/><circle cx="330" cy="270" r="5"/><circle cx="200" cy="320" r="4"/></g>
-        <circle cx="200" cy="180" r="30" fill="#2563eb" class="ping" opacity=".5"/>
-        <circle cx="200" cy="180" r="32" fill="#2563eb"/>
+        <circle cx="200" cy="180" r="30" fill="#0559fc" class="ping" opacity=".5"/>
+        <circle cx="200" cy="180" r="32" fill="#0559fc"/>
         <g stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M186 176a20 20 0 0 1 28 0"/><path d="M191 183a12 12 0 0 1 18 0"/><circle cx="200" cy="191" r="1.5" fill="white"/></g>
       </svg>
     </div>
@@ -95,44 +95,59 @@
 <section id="services" class="py-20 sm:py-28 bg-white">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="max-w-2xl">
-      <h2 class="font-display font-bold text-navy-900 text-3xl sm:text-4xl tracking-tight">What we do for your business</h2>
-      <p class="mt-4 text-lg text-slate-600">Three services that cover the basics well, from the help desk to the server cupboard.</p>
+      <h2 class="font-display font-bold text-navy-900 text-3xl sm:text-4xl tracking-tight">How we can help</h2>
+      <p class="mt-4 text-lg text-slate-600">Whether it's a slow laptop at home or a new website for your business, we keep things simple.</p>
     </div>
 
-    <div class="mt-14 grid gap-6 md:grid-cols-3">
+    <h3 class="mt-14 font-display font-semibold text-xl text-navy-900">Computers and networks</h3>
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
       <article class="rounded-2xl border border-slate-200 p-8 hover:border-brand hover:shadow-xl hover:shadow-brand/10 transition">
         <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-soft text-brand">
           <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
         </div>
-        <h3 class="mt-6 font-display font-semibold text-xl text-navy-900">Managed IT support</h3>
-        <p class="mt-3 leading-relaxed">Friendly help desk, device setup, updates and monitoring for a simple monthly fee. Problems get fixed before they slow you down.</p>
+        <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Computers and software</h4>
+        <p class="mt-3 leading-relaxed">Setting up new computers, installing and updating software, and getting your devices working the way you need.</p>
       </article>
-
       <article class="rounded-2xl border border-slate-200 p-8 hover:border-brand hover:shadow-xl hover:shadow-brand/10 transition">
         <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-soft text-brand">
           <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/><path d="M2 9a15 15 0 0 1 20 0"/></svg>
         </div>
-        <h3 class="mt-6 font-display font-semibold text-xl text-navy-900">Networks and Wi-Fi</h3>
-        <p class="mt-3 leading-relaxed">Design, cabling and installation of fast, reliable office networks, with coverage that reaches every desk and meeting room.</p>
+        <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Wi-Fi and network installation</h4>
+        <p class="mt-3 leading-relaxed">Home and office networks installed properly, with Wi-Fi coverage that reaches every room and desk.</p>
       </article>
-
       <article class="rounded-2xl border border-slate-200 p-8 hover:border-brand hover:shadow-xl hover:shadow-brand/10 transition">
         <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-soft text-brand">
-          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.2 8 8 9 4.8-1 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </div>
-        <h3 class="mt-6 font-display font-semibold text-xl text-navy-900">Security and backup</h3>
-        <p class="mt-3 leading-relaxed">Firewalls, email protection and automatic cloud backups, so a cyber attack or a dead laptop never costs you your data.</p>
+        <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Maintenance and troubleshooting</h4>
+        <p class="mt-3 leading-relaxed">Slow computers, dropped connections and strange error messages, found and fixed, then kept running smoothly.</p>
       </article>
     </div>
 
-    <!-- Shop banner 
-    <div class="mt-10 rounded-2xl bg-navy-900 px-6 py-8 sm:px-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-      <div>
-        <h3 class="font-display font-semibold text-xl text-white">Looking for tech gear?</h3>
-        <p class="mt-1 text-slate-300">Browse our online store for hardware and accessories, delivered across Australia.</p>
-      </div>
-      <a href="https://YOUR-STORE.myshopify.com" target="_blank" rel="noopener" class="shrink-0 inline-flex justify-center rounded-full bg-white px-6 py-3 font-semibold text-navy-900 hover:bg-brand-soft transition">Visit the store</a>
-    </div> -->
+    <h3 class="mt-14 font-display font-semibold text-xl text-navy-900">Getting your business found online</h3>
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
+      <article class="rounded-2xl border border-slate-200 p-8 hover:border-brand hover:shadow-xl hover:shadow-brand/10 transition">
+        <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-soft text-brand">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Social media management</h4>
+        <p class="mt-3 leading-relaxed">Regular, on-brand posts and page upkeep, so your business stays visible without taking up your time.</p>
+      </article>
+      <article class="rounded-2xl border border-slate-200 p-8 hover:border-brand hover:shadow-xl hover:shadow-brand/10 transition">
+        <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-soft text-brand">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Website design and maintenance</h4>
+        <p class="mt-3 leading-relaxed">A clean, mobile-friendly website built for your business, then kept updated, secure and working.</p>
+      </article>
+      <article class="rounded-2xl border border-slate-200 p-8 hover:border-brand hover:shadow-xl hover:shadow-brand/10 transition">
+        <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-soft text-brand">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Search engine optimisation (SEO)</h4>
+        <p class="mt-3 leading-relaxed">Helping local customers find you on Google when they search for what you offer.</p>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -140,25 +155,25 @@
 <section id="why" class="py-20 sm:py-28 bg-slate-50">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-12">
     <div class="lg:col-span-2">
-      <h2 class="font-display font-bold text-navy-900 text-3xl sm:text-4xl tracking-tight">Why businesses choose Small Networks</h2>
-      <p class="mt-4 text-lg text-slate-600">You get a real person who knows your setup, not a ticket number.</p>
+      <h2 class="font-display font-bold text-navy-900 text-3xl sm:text-4xl tracking-tight">Why people choose SmallNetworks</h2>
+      <p class="mt-4 text-lg text-slate-600">You deal with a real person who knows your setup, not a ticket number.</p>
     </div>
     <ul class="lg:col-span-3 grid sm:grid-cols-2 gap-x-8 gap-y-10">
       <li class="flex gap-4">
-        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>
-        <div><h3 class="font-display font-semibold text-navy-900">Local Melbourne team</h3><p class="mt-1">We're nearby and can be on site when remote help isn't enough.</p></div>
+        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4"><use href="#tick"/></svg></span>
+        <div><h3 class="font-display font-semibold text-navy-900">Local Melbourne team</h3><p class="mt-1">We're nearby and can come to your home or workplace when remote help isn't enough.</p></div>
       </li>
       <li class="flex gap-4">
-        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>
-        <div><h3 class="font-display font-semibold text-navy-900">Fast, clear responses</h3><p class="mt-1">Tell us the problem and we tell you the plan, in plain English.</p></div>
+        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4"><use href="#tick"/></svg></span>
+        <div><h3 class="font-display font-semibold text-navy-900">Made for homes and small businesses</h3><p class="mt-1">We work with households and local small businesses, so you get advice that fits your size and budget.</p></div>
       </li>
       <li class="flex gap-4">
-        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>
-        <div><h3 class="font-display font-semibold text-navy-900">Upfront pricing</h3><p class="mt-1">Quotes and monthly plans with no surprise call-out fees.</p></div>
+        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4"><use href="#tick"/></svg></span>
+        <div><h3 class="font-display font-semibold text-navy-900">Plain-English answers</h3><p class="mt-1">Tell us the problem and we explain the fix and the cost, without the jargon.</p></div>
       </li>
       <li class="flex gap-4">
-        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>
-        <div><h3 class="font-display font-semibold text-navy-900">Support and supplies in one place</h3><p class="mt-1">We advise on the right equipment, and you can buy it from our store.</p></div>
+        <span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand text-white"><svg class="h-4 w-4"><use href="#tick"/></svg></span>
+        <div><h3 class="font-display font-semibold text-navy-900">Tech and marketing in one place</h3><p class="mt-1">The people who fix your Wi-Fi can also build your website and manage your social media.</p></div>
       </li>
     </ul>
   </div>
@@ -168,31 +183,57 @@
 <section id="contact" class="py-20 sm:py-28 bg-white">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20">
     <div>
-      <h2 class="font-display font-bold text-navy-900 text-3xl sm:text-4xl tracking-tight">Talk to us about your IT</h2>
-      <p class="mt-4 text-lg text-slate-600 max-w-md">Send a few details and we'll reply within one business day.</p>
+      <h2 class="font-display font-bold text-navy-900 text-3xl sm:text-4xl tracking-tight">Talk to us</h2>
+      <p class="mt-4 text-lg text-slate-600 max-w-md">Tell us what you need and we'll get back to you soon.</p>
       <dl class="mt-10 space-y-5">
-        <div><dt class="font-semibold text-navy-900">Email</dt><dd><a class="text-brand hover:underline" href="mailto: contact@smallnetworks.com.au">contact@smallnetworks.com.au</a></dd></div>
-        <!-- <div><dt class="font-semibold text-navy-900">Phone</dt><dd>(03) 0000 0000</dd></div> -->
+        <div><dt class="font-semibold text-navy-900">Email</dt><dd><a class="text-brand hover:underline" href="mailto:contact@smallnetworks.com.au">contact@smallnetworks.com.au</a></dd></div>
+        <div><dt class="font-semibold text-navy-900">Phone</dt><dd><a class="text-brand hover:underline" href="tel:+61414518017">0414 518 017</a></dd></div>
         <div><dt class="font-semibold text-navy-900">Location</dt><dd>Melbourne, Victoria, Australia</dd></div>
       </dl>
     </div>
 
-    <form id="contact-form" class="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8 space-y-5" novalidate>
-      <div>
-        <label for="name" class="block text-sm font-semibold text-navy-900">Your name</label>
-        <input id="name" name="name" type="text" required autocomplete="name" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-brand focus:ring-2 focus:ring-brand/30 outline-none">
+    <div class="relative">
+      <form id="contact-form" class="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8 space-y-5 transition-opacity duration-300" novalidate>
+        <div>
+          <label for="name" class="block text-sm font-semibold text-navy-900">Your name</label>
+          <input id="name" name="name" type="text" required autocomplete="name" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-brand focus:ring-2 focus:ring-brand/30 outline-none">
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="email" class="block text-sm font-semibold text-navy-900">Email address</label>
+            <input id="email" name="email" type="email" required autocomplete="email" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-brand focus:ring-2 focus:ring-brand/30 outline-none">
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-semibold text-navy-900">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-brand focus:ring-2 focus:ring-brand/30 outline-none">
+          </div>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-semibold text-navy-900">How can we help?</label>
+          <textarea id="message" name="message" rows="4" required class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-brand focus:ring-2 focus:ring-brand/30 outline-none"></textarea>
+        </div>
+
+        <!-- Honeypot: hidden from people, bots tend to fill it in. Static Forms ignores submissions where it has a value. -->
+        <div class="hp" aria-hidden="true">
+          <label for="honeypot">Leave this field empty</label>
+          <input id="honeypot" name="honeypot" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <p id="form-msg" class="text-sm min-h-[1.25rem] text-red-600" role="alert" aria-live="polite"></p>
+        <button id="submit-btn" type="submit" class="w-full inline-flex items-center justify-center gap-3 rounded-full bg-brand px-7 py-3.5 font-semibold text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition disabled:opacity-80 disabled:cursor-not-allowed">
+          <svg id="spinner" class="hidden h-5 w-5 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity=".3" stroke-width="3"/><path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span id="btn-label">Send message</span>
+        </button>
+      </form>
+
+      <div id="success" class="hidden pop rounded-2xl border border-slate-200 bg-slate-50 p-8 sm:p-12 text-center" role="status">
+        <div class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-brand text-white">
+          <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path class="tick" d="m5 12 5 5 9-10"/></svg>
+        </div>
+        <h3 class="mt-6 font-display font-semibold text-2xl text-navy-900">Message sent</h3>
+        <p class="mt-2">Thanks for getting in touch. We'll reply to your email soon.</p>
       </div>
-      <div>
-        <label for="email" class="block text-sm font-semibold text-navy-900">Email address</label>
-        <input id="email" name="email" type="email" required autocomplete="email" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-brand focus:ring-2 focus:ring-brand/30 outline-none">
-      </div>
-      <div>
-        <label for="message" class="block text-sm font-semibold text-navy-900">How can we help?</label>
-        <textarea id="message" name="message" rows="4" required class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-brand focus:ring-2 focus:ring-brand/30 outline-none"></textarea>
-      </div>
-      <p id="form-msg" class="text-sm min-h-[1.25rem]" role="status" aria-live="polite"></p>
-      <button type="submit" class="w-full rounded-full bg-brand px-7 py-3.5 font-semibold text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition">Send message</button>
-    </form>
+    </div>
   </div>
 </section>
 
@@ -201,11 +242,11 @@
 <!-- Footer -->
 <footer class="bg-navy-950 text-slate-400">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-    <p>&copy; <span id="year"></span> H ARBAB PTY LTD • Trading As: Small Networks • ABN 81 702 812 824 • All rights reserved.</p>
-    <nav class="flex gap-6" aria-label="Footer">
+    <p class="flex items-center gap-3"><svg class="h-7 w-[26px] shrink-0" viewBox="0 0 838 893" aria-hidden="true"><use href="#logo"/></svg><span>&copy; <span id="year"></span> SmallNetworks. Melbourne, Australia.</span></p>
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Footer">
       <a href="#services" class="hover:text-white">Services</a>
-      <a href="#contact" class="hover:text-white">Contact</a>
-      <!-- <a href="https://YOUR-STORE.myshopify.com" target="_blank" rel="noopener" class="hover:text-white">Online store</a> -->
+      <a href="mailto:contact@smallnetworks.com.au" class="hover:text-white">contact@smallnetworks.com.au</a>
+      <a href="tel:+61414518017" class="hover:text-white">0414 518 017</a>
     </nav>
   </div>
 </footer>
@@ -213,22 +254,68 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Form mockup: validates, then opens the visitor's email app with the message filled in.
-  // To send for real, replace this with a form service (e.g. Formspree) or your own backend.
+  // Get a free access key at https://www.staticforms.xyz and paste it here.
+  const STATIC_FORMS_ACCESS_KEY = 'YOUR_STATIC_FORMS_ACCESS_KEY';
+  const ENDPOINT = 'https://api.staticforms.xyz/submit';
+
   const form = document.getElementById('contact-form');
   const msg = document.getElementById('form-msg');
-  form.addEventListener('submit', (e) => {
+  const btn = document.getElementById('submit-btn');
+  const spinner = document.getElementById('spinner');
+  const label = document.getElementById('btn-label');
+  const success = document.getElementById('success');
+
+  function setSending(on) {
+    btn.disabled = on;
+    spinner.classList.toggle('hidden', !on);
+    label.textContent = on ? 'Sending...' : 'Send message';
+    form.setAttribute('aria-busy', on);
+  }
+
+  function showSuccess() {
+    form.classList.add('opacity-0');
+    setTimeout(() => { form.classList.add('hidden'); success.classList.remove('hidden'); form.reset(); }, 300);
+  }
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = form.name.value.trim(), email = form.email.value.trim(), text = form.message.value.trim();
+    msg.textContent = '';
+    const name = form.name.value.trim(), email = form.email.value.trim(),
+          phone = form.phone.value.trim(), text = form.message.value.trim();
+
     if (!name || !/^\S+@\S+\.\S+$/.test(email) || !text) {
-      msg.className = 'text-sm text-red-600';
       msg.textContent = 'Please enter your name, a valid email address and a message.';
       return;
     }
-    const body = encodeURIComponent(text + '\n\nFrom: ' + name + ' (' + email + ')');
-    window.location.href = 'mailto: contact@smallnetworks.com.au?subject=' + encodeURIComponent('Website enquiry from ' + name) + '&body=' + body;
-    msg.className = 'text-sm text-green-700';
-    msg.textContent = 'Thanks, ' + name + '. Your email app should open so you can send your message.';
+
+    setSending(true);
+
+    // Honeypot filled in: almost certainly a bot. Pretend it worked and send nothing.
+    if (form.honeypot.value) {
+      setTimeout(() => { setSending(false); showSuccess(); }, 1200);
+      return;
+    }
+
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          accessKey: sf_3a04dc96e7bde63712009450,
+          subject: 'Website enquiry from ' + name,
+          name, email, phone, message: text,
+          honeypot: form.honeypot.value,
+          replyTo: '@'
+        })
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) throw new Error(data.message || 'Request failed');
+      setSending(false);
+      showSuccess();
+    } catch (err) {
+      setSending(false);
+      msg.textContent = 'Sorry, your message could not be sent. Please try again, or email contact@smallnetworks.com.au.';
+    }
   });
 </script>
 </body>
