@@ -258,7 +258,7 @@
   const STATIC_FORMS_ACCESS_KEY = 'YOUR_STATIC_FORMS_ACCESS_KEY';
   const ENDPOINT = 'https://api.staticforms.dev/submit';
   // While testing, show the real error under the form. Set to false before going live.
-  const DEBUG = true;
+  const DEBUG = false;
 
   const form = document.getElementById('contact-form');
   const msg = document.getElementById('form-msg');
@@ -301,7 +301,7 @@
     try {
       // Sent as a standard form post (no preflight request), the most compatible way to call Static Forms from a browser.
       const payload = new URLSearchParams({
-        apiKey: sf_3a04dc96e7bde63712009450,
+        apiKey: 'sf_3a04dc96e7bde63712009450',
         subject: 'Website enquiry from ' + name,
         name, email, message: text,
         honeypot: form.honeypot.value
