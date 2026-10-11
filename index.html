@@ -301,11 +301,10 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          accessKey: sf_3a04dc96e7bde63712009450,
+          apiKey: sf_3a04dc96e7bde63712009450,
           subject: 'Website enquiry from ' + name,
           name, email, phone, message: text,
-          honeypot: form.honeypot.value,
-          replyTo: '@'
+          honeypot: form.honeypot.value
         })
       });
       const data = await res.json();
