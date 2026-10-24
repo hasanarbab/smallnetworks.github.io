@@ -399,3 +399,31 @@ h2.big, .sec-head h2, .why h2, .split h2 { font-size: clamp(2rem, 4.2vw, 3.5rem)
 }
 body.lock .chat-fab { display: none; }
 @media (max-width: 720px) { .footer .fbottom { padding-bottom: 76px; } }
+
+/* ---------- Booking (Google Calendar) ---------- */
+.cta-actions .callnote { margin-top: 18px; }
+.book-box { margin-bottom: 44px; padding: 26px 28px 24px; background: var(--ice); border: 2px solid var(--ink); border-radius: 14px; box-shadow: inset 0 0 0 4px var(--ice), inset 0 0 0 6px var(--ink); }
+.book-box h2 { font-family: var(--disp); font-weight: 800; font-size: 1.5rem; line-height: 1.15; margin: 0 0 8px; color: var(--ink); }
+.book-box p { margin: 0 0 16px; color: var(--ink); }
+.book-box .book-alt { margin: 14px 0 0; font-size: .95rem; }
+.book-box .book-alt a { color: var(--cobalt-d); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 720px) { .cta-actions { width: 100%; } .book-box { padding: 22px 22px 20px; } }
+.book-box .book-btn { margin-top: 2px; }
+
+/* ---------- Book a meeting page (inline Google Calendar) ---------- */
+.book-grid { grid-template-columns: 0.8fr 1.2fr; gap: 64px; }
+.book-grid .contact-list span.v { font-size: 1.02rem; font-weight: 600; line-height: 1.35; }
+.book-help { margin-top: 32px; color: var(--muted); }
+.book-help a { color: var(--cobalt-d); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.cal-frame { background: #fff; border: 2px solid var(--ink); border-radius: 16px; box-shadow: 12px 12px 0 var(--ice-2); overflow: hidden; }
+.cal-frame iframe { display: block; width: 100%; height: 760px; border: 0; }
+.cal-note { margin: 22px 0 0; font-size: .95rem; color: var(--muted); }
+.cal-note a { color: var(--cobalt-d); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 1100px) {
+  .book-grid { grid-template-columns: 1fr; gap: 40px; }
+  .book-grid .cal-col { order: -1; }
+}
+@media (max-width: 720px) {
+  .cal-frame { box-shadow: 6px 6px 0 var(--ice-2); }
+  .cal-frame iframe { height: 820px; }
+}
