@@ -85,7 +85,10 @@ h1, h2, h3, h4 {
 .mpanel a { display: block; padding: 16px 0; border-bottom: 1px solid var(--rule); font-family: var(--disp); font-stretch: 105%; font-weight: 700; font-size: 1.2rem; color: var(--ink); }
 .mpanel .m-sub a { padding: 12px 0 12px 18px; font-size: 1.02rem; font-weight: 600; font-stretch: 100%; color: var(--muted); }
 .mpanel .m-actions { display: grid; gap: 12px; margin-top: 26px; }
-.mpanel .m-actions a { border: 0; padding: 0; }
+.mpanel .m-actions a.btn { display: flex; width: 100%; padding: 18px 24px; border: 2px solid transparent; border-radius: var(--r); font-size: 1.1rem; font-stretch: 100%; line-height: 1.1; }
+.mpanel .m-actions a.btn-primary { background: var(--cobalt); color: #fff; }
+.mpanel .m-actions a.btn-primary:hover { background: var(--cobalt-d); }
+.mpanel .m-actions a.btn-line { border-color: var(--ink); color: var(--ink); }
 
 /* ---------- Buttons and links ---------- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: var(--r); border: 2px solid transparent; font-family: var(--disp); font-stretch: 100%; font-weight: 700; font-size: 1rem; line-height: 1.1; cursor: pointer; transition: transform 0.15s, background 0.15s, color 0.15s, border-color 0.15s; white-space: nowrap; }
