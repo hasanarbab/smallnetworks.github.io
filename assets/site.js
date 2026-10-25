@@ -21,6 +21,17 @@
   if (mpanel) mpanel.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
   window.addEventListener('resize', function () { if (window.innerWidth > 1100) setMenu(false); });
 
+  /* ---------- Time-limited offers hide themselves after their end date ---------- */
+  var now = Date.now();
+  d.querySelectorAll('[data-offer-end]').forEach(function (el) {
+    var end = Date.parse(el.getAttribute('data-offer-end'));
+    if (!isNaN(end) && now > end) el.hidden = true;
+  });
+  d.querySelectorAll('[data-offer-over]').forEach(function (el) {
+    var end = Date.parse(el.getAttribute('data-offer-over'));
+    if (!isNaN(end) && now > end) el.hidden = false;
+  });
+
   /* ---------- Contact form (Static Forms) ---------- */
   var form = d.getElementById('contact-form');
   if (!form) return;
