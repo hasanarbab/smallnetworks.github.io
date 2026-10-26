@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hasan Arbab | SmallNetworks</title>
+<meta name="description" content="Hasan Arbab from SmallNetworks. Website design, social media and SEO for Melbourne small businesses. Save the contact, call, message or book a meeting.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0559fc">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="SmallNetworks">
+<meta property="og:title" content="Hasan Arbab | SmallNetworks">
+<meta property="og:description" content="Website design, social media and SEO for Melbourne small businesses.">
+<meta property="og:url" content="https://smallnetworks.com.au/card/">
+<meta property="og:image" content="https://smallnetworks.com.au/assets/icon-512.png">
+<meta property="og:locale" content="en_AU">
+<link rel="icon" type="image/svg+xml" href="https://smallnetworks.com.au/assets/favicon.svg">
+<link rel="apple-touch-icon" href="https://smallnetworks.com.au/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cobalt: #0559fc; --cobalt-d: #0343c2; --ink: #091232; --ice: #eaf0ff; --ice-2: #d9e4ff;
+  --signal: #ffd23f; --text: #17203f; --muted: #4a5778; --rule: #cfd9f0;
+  --disp: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --body: 'Newsreader', Georgia, 'Times New Roman', serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ice); color: var(--text); font-family: var(--body); font-size: 1.125rem; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+svg { display: block; }
+a { color: inherit; text-decoration: none; }
+p { margin: 0; }
+.card { max-width: 460px; margin: 0 auto; min-height: 100vh; background: #fff; overflow: hidden; padding-bottom: env(safe-area-inset-bottom); }
+@media (min-width: 520px) { body { padding: 32px 16px; } .card { min-height: 0; border-radius: 22px; box-shadow: 0 30px 60px -30px rgba(9,18,50,.45); } }
+.top { position: relative; height: 150px; background: var(--cobalt); overflow: hidden; }
+.top .wm { position: absolute; right: -46px; top: -28px; width: 250px; height: auto; fill: #fff; opacity: .16; }
+.top::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--signal); }
+.avatar { position: relative; width: 112px; height: 112px; margin: -62px auto 0; border-radius: 26px; background: #fff; display: grid; place-items: center; box-shadow: 0 0 0 5px #fff, 0 16px 30px -14px rgba(9,18,50,.5); }
+.avatar.logo svg { width: 70px; height: auto; fill: var(--cobalt); }
+.avatar.photo { display: block; width: 148px; height: 148px; margin-top: -80px; border-radius: 50%; box-shadow: 0 0 0 5px #fff, 0 18px 30px -14px rgba(9,18,50,.55); }
+.avatar.photo img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: var(--cobalt); }
+.badge { position: absolute; right: -2px; bottom: 6px; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--cobalt); box-shadow: 0 0 0 4px #fff; }
+.badge svg { width: 22px; height: auto; fill: #fff; }
+.who { text-align: center; padding: 20px 24px 0; }
+h1 { margin: 0; font-family: var(--disp); font-weight: 800; font-size: 2rem; line-height: 1.1; letter-spacing: -.02em; color: var(--ink); }
+.org { margin-top: 6px; font-family: var(--disp); font-weight: 700; font-size: 1.05rem; color: var(--cobalt); }
+.role { margin-top: 2px; font-family: var(--disp); font-weight: 500; font-size: .95rem; color: var(--muted); }
+.tag { margin: 12px auto 0; max-width: 30ch; font-style: italic; color: var(--muted); }
+.main { padding: 24px 22px 8px; }
+.btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 58px; padding: 14px 18px; border: 0; border-radius: 14px; font-family: var(--disp); font-weight: 800; font-size: 1.1rem; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+.btn svg { width: 22px; height: 22px; flex: none; }
+.btn-save { background: var(--signal); color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink), 0 14px 24px -14px rgba(9,18,50,.6); }
+.btn-save:hover { transform: translateY(-2px); }
+.hint { margin-top: 10px; text-align: center; font-size: .9rem; color: var(--muted); }
+.acts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; }
+.act { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 92px; padding: 14px 8px; border-radius: 14px; background: var(--ice); color: var(--ink); font-family: var(--disp); font-weight: 700; font-size: 1rem; text-align: center; transition: background .15s ease, transform .15s ease; }
+.act svg { width: 26px; height: 26px; color: var(--cobalt); }
+.act:hover { background: var(--ice-2); transform: translateY(-2px); }
+.info { margin: 22px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+.info li { display: flex; align-items: center; gap: 14px; padding: 14px 2px; border-bottom: 1px solid var(--rule); }
+.info svg { width: 22px; height: 22px; color: var(--cobalt); flex: none; }
+.info small { display: block; font-family: var(--disp); font-weight: 600; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.info a { font-weight: 600; color: var(--ink); overflow-wrap: anywhere; }
+.info a:hover { color: var(--cobalt); }
+.socials { display: flex; justify-content: center; gap: 12px; margin-top: 22px; }
+.soc { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--ink); color: #fff; transition: background .15s ease, transform .15s ease; }
+.soc svg { width: 24px; height: 24px; }
+.soc:hover { background: var(--cobalt); transform: translateY(-2px); }
+.share { margin: 26px 22px 0; padding: 22px 18px; border-radius: 18px; background: var(--ice); text-align: center; }
+.share h2 { margin: 0; font-family: var(--disp); font-weight: 800; font-size: 1.15rem; color: var(--ink); }
+.share p { margin-top: 4px; font-size: 1rem; color: var(--muted); }
+.qr-wrap { display: inline-block; margin-top: 16px; padding: 10px; border-radius: 14px; background: #fff; box-shadow: 0 10px 20px -14px rgba(9,18,50,.5); }
+.qr { width: 190px; height: 190px; }
+.share-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+.share-btns.one { grid-template-columns: 1fr; }
+.btn-line { min-height: 50px; background: #fff; color: var(--ink); font-size: 1rem; box-shadow: inset 0 0 0 2px var(--ink); }
+.btn-line:hover { background: var(--ink); color: #fff; }
+.foot { padding: 26px 22px 30px; text-align: center; font-size: .86rem; color: var(--muted); }
+.foot a { color: var(--cobalt); font-weight: 600; }
+.foot a:hover { text-decoration: underline; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--cobalt); outline-offset: 3px; }
+.btn-save:focus-visible { outline-color: var(--ink); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (prefers-reduced-motion: no-preference) {
+  .card { animation: rise .5s ease both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+}
+@media (prefers-reduced-motion: reduce) { .btn, .act, .soc { transition: none; } }
+@media (max-width: 360px) { h1 { font-size: 1.7rem; } .acts { gap: 8px; } }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="top"><svg class="wm" viewBox="0 0 838 893" aria-hidden="true"><path fill-rule="evenodd" d="M372.0 283.0 L362.8 294.8 L358.2 311.5 L359.2 374.2 L363.0 389.0 L369.8 401.0 L831.2 776.2 L837.8 779.0 L837.8 279.2 L832.0 264.8 L824.0 253.2 L790.5 227.2 L771.5 219.0 L754.8 220.2 L744.5 224.8 L735.0 232.5 L726.5 247.0 L723.2 260.2 L722.2 532.5 L410.5 280.8 L403.5 277.2 L388.5 275.5Z M313.5 3.5 L288.5 7.2 L275.2 14.5 L43.2 174.5 L32.2 184.2 L22.2 200.5 L16.8 223.8 L17.8 319.2 L25.8 339.8 L41.2 357.5 L423.8 660.5 L432.5 670.0 L432.8 679.0 L420.5 691.2 L356.2 735.5 L341.5 742.8 L327.8 743.0 L313.5 735.2 L21.0 511.0 L17.5 512.5 L16.2 523.0 L18.0 646.2 L22.5 660.8 L28.2 670.8 L40.5 683.2 L297.5 873.5 L317.8 882.0 L334.5 883.8 L353.0 880.8 L377.5 867.8 L488.2 792.2 L542.5 751.8 L551.2 736.0 L555.8 716.0 L555.8 634.2 L552.8 617.8 L545.2 603.0 L534.8 590.8 L140.8 279.0 L136.5 272.5 L136.5 262.5 L139.5 256.5 L292.8 149.0 L305.2 143.0 L316.2 143.5 L325.5 148.0 L498.0 283.5 L513.8 290.8 L524.5 290.5 L535.8 285.8 L543.0 280.0 L552.0 266.8 L555.8 248.8 L554.5 188.2 L548.8 172.8 L543.5 164.8 L521.2 145.2 L350.8 15.2 L336.0 7.5Z"/></svg></div><div class="avatar logo" role="img" aria-label="SmallNetworks logo"><svg viewBox="0 0 838 893" aria-hidden="true"><path fill-rule="evenodd" d="M372.0 283.0 L362.8 294.8 L358.2 311.5 L359.2 374.2 L363.0 389.0 L369.8 401.0 L831.2 776.2 L837.8 779.0 L837.8 279.2 L832.0 264.8 L824.0 253.2 L790.5 227.2 L771.5 219.0 L754.8 220.2 L744.5 224.8 L735.0 232.5 L726.5 247.0 L723.2 260.2 L722.2 532.5 L410.5 280.8 L403.5 277.2 L388.5 275.5Z M313.5 3.5 L288.5 7.2 L275.2 14.5 L43.2 174.5 L32.2 184.2 L22.2 200.5 L16.8 223.8 L17.8 319.2 L25.8 339.8 L41.2 357.5 L423.8 660.5 L432.5 670.0 L432.8 679.0 L420.5 691.2 L356.2 735.5 L341.5 742.8 L327.8 743.0 L313.5 735.2 L21.0 511.0 L17.5 512.5 L16.2 523.0 L18.0 646.2 L22.5 660.8 L28.2 670.8 L40.5 683.2 L297.5 873.5 L317.8 882.0 L334.5 883.8 L353.0 880.8 L377.5 867.8 L488.2 792.2 L542.5 751.8 L551.2 736.0 L555.8 716.0 L555.8 634.2 L552.8 617.8 L545.2 603.0 L534.8 590.8 L140.8 279.0 L136.5 272.5 L136.5 262.5 L139.5 256.5 L292.8 149.0 L305.2 143.0 L316.2 143.5 L325.5 148.0 L498.0 283.5 L513.8 290.8 L524.5 290.5 L535.8 285.8 L543.0 280.0 L552.0 266.8 L555.8 248.8 L554.5 188.2 L548.8 172.8 L543.5 164.8 L521.2 145.2 L350.8 15.2 L336.0 7.5Z"/></svg></div>
+
+  <header class="who">
+    <h1>Hasan Arbab</h1>
+    <p class="org">SmallNetworks</p>
+    <p class="role">Founder Director</p>
+    <p class="tag">Website design, social media and SEO for Melbourne small businesses.</p>
+  </header>
+
+  <section class="main" aria-label="Contact actions">
+    <a class="btn btn-save" href="smallnetworks.vcf" type="text/vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M19 8v6M16 11h6"/></svg><span>Save to contacts</span></a>
+    <p class="hint">On iPhone, tap Save, then Create New Contact. If nothing happens, open this page in Safari.</p>
+
+    <div class="acts">
+      <a class="act" href="tel:+61414518017"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Call</span></a>
+      <a class="act" href="https://wa.me/61414518017?text=Hi%20SmallNetworks%2C%20I%27d%20like%20to%20chat%20about%20my%20business." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/></svg><span>WhatsApp</span></a>
+      <a class="act" href="mailto:contact@smallnetworks.com.au"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Email</span></a>
+      <a class="act" href="https://smallnetworks.com.au/book.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Book a meeting</span></a>
+    </div>
+
+    <ul class="info">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><small>Phone</small><a href="tel:+61414518017">0414 518 017</a></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><small>Email</small><a href="mailto:contact@smallnetworks.com.au">contact@smallnetworks.com.au</a></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><div><small>Website</small><a href="https://smallnetworks.com.au">smallnetworks.com.au</a></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 1 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><small>Location</small><span>Melbourne, Victoria, Australia</span></div></li>
+    </ul>
+
+    <div class="socials"><a class="soc" href="https://www.facebook.com/smallnetworks" target="_blank" rel="noopener" aria-label="SmallNetworks on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a class="soc" href="https://www.instagram.com/smallnetworks.au" target="_blank" rel="noopener" aria-label="SmallNetworks on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><path d="M17.4 6.6h.01"/></svg></a></div>
+  </section>
+
+  <section class="share" aria-labelledby="share-h">
+    <h2 id="share-h">Share this card</h2>
+    <p>Let someone scan this code with their phone camera.</p>
+    <div class="qr-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" class="qr" shape-rendering="crispEdges" role="img" aria-label="QR code that opens https://smallnetworks.com.au/card/"><rect width="41" height="41" fill="#ffffff"/><path fill="#091232" d="M4 4h7v1h-7zM13 4h1v1h-1zM15 4h1v1h-1zM19 4h2v1h-2zM22 4h1v1h-1zM25 4h2v1h-2zM28 4h1v1h-1zM30 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM13 5h3v1h-3zM17 5h4v1h-4zM22 5h3v1h-3zM26 5h1v1h-1zM28 5h1v1h-1zM30 5h1v1h-1zM36 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h3v1h-3zM18 6h1v1h-1zM21 6h3v1h-3zM25 6h1v1h-1zM27 6h2v1h-2zM30 6h1v1h-1zM32 6h3v1h-3zM36 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM12 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM22 7h1v1h-1zM24 7h2v1h-2zM27 7h2v1h-2zM30 7h1v1h-1zM32 7h3v1h-3zM36 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM14 8h1v1h-1zM17 8h2v1h-2zM20 8h2v1h-2zM23 8h2v1h-2zM26 8h1v1h-1zM30 8h1v1h-1zM32 8h3v1h-3zM36 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM13 9h2v1h-2zM16 9h1v1h-1zM19 9h2v1h-2zM24 9h2v1h-2zM27 9h2v1h-2zM30 9h1v1h-1zM36 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM28 10h1v1h-1zM30 10h7v1h-7zM13 11h1v1h-1zM17 11h1v1h-1zM19 11h1v1h-1zM23 11h2v1h-2zM26 11h3v1h-3zM7 12h2v1h-2zM10 12h2v1h-2zM13 12h1v1h-1zM18 12h2v1h-2zM21 12h4v1h-4zM28 12h1v1h-1zM33 12h2v1h-2zM5 13h1v1h-1zM8 13h1v1h-1zM11 13h1v1h-1zM13 13h5v1h-5zM19 13h2v1h-2zM23 13h1v1h-1zM26 13h2v1h-2zM29 13h1v1h-1zM31 13h3v1h-3zM4 14h1v1h-1zM6 14h2v1h-2zM10 14h3v1h-3zM15 14h4v1h-4zM23 14h1v1h-1zM25 14h3v1h-3zM29 14h1v1h-1zM31 14h1v1h-1zM35 14h2v1h-2zM4 15h1v1h-1zM6 15h2v1h-2zM11 15h5v1h-5zM19 15h1v1h-1zM22 15h1v1h-1zM24 15h1v1h-1zM26 15h1v1h-1zM28 15h1v1h-1zM31 15h2v1h-2zM34 15h3v1h-3zM7 16h5v1h-5zM13 16h1v1h-1zM15 16h1v1h-1zM17 16h1v1h-1zM20 16h1v1h-1zM22 16h1v1h-1zM26 16h3v1h-3zM30 16h2v1h-2zM35 16h2v1h-2zM4 17h1v1h-1zM6 17h1v1h-1zM8 17h1v1h-1zM12 17h2v1h-2zM15 17h1v1h-1zM17 17h3v1h-3zM23 17h1v1h-1zM25 17h1v1h-1zM27 17h1v1h-1zM29 17h1v1h-1zM31 17h1v1h-1zM34 17h2v1h-2zM4 18h3v1h-3zM8 18h4v1h-4zM15 18h1v1h-1zM17 18h1v1h-1zM28 18h2v1h-2zM33 18h2v1h-2zM4 19h3v1h-3zM8 19h2v1h-2zM13 19h1v1h-1zM15 19h4v1h-4zM22 19h3v1h-3zM27 19h1v1h-1zM29 19h1v1h-1zM31 19h1v1h-1zM33 19h2v1h-2zM5 20h1v1h-1zM7 20h1v1h-1zM10 20h1v1h-1zM12 20h9v1h-9zM22 20h1v1h-1zM24 20h1v1h-1zM30 20h1v1h-1zM32 20h1v1h-1zM36 20h1v1h-1zM4 21h1v1h-1zM7 21h3v1h-3zM12 21h1v1h-1zM14 21h1v1h-1zM17 21h1v1h-1zM19 21h5v1h-5zM26 21h1v1h-1zM28 21h1v1h-1zM30 21h4v1h-4zM36 21h1v1h-1zM5 22h1v1h-1zM8 22h1v1h-1zM10 22h2v1h-2zM13 22h2v1h-2zM17 22h2v1h-2zM21 22h1v1h-1zM25 22h1v1h-1zM27 22h1v1h-1zM29 22h2v1h-2zM33 22h2v1h-2zM36 22h1v1h-1zM4 23h1v1h-1zM6 23h3v1h-3zM12 23h3v1h-3zM16 23h3v1h-3zM21 23h1v1h-1zM23 23h2v1h-2zM27 23h2v1h-2zM32 23h4v1h-4zM5 24h3v1h-3zM9 24h3v1h-3zM17 24h2v1h-2zM22 24h1v1h-1zM31 24h1v1h-1zM33 24h1v1h-1zM36 24h1v1h-1zM4 25h2v1h-2zM12 25h1v1h-1zM17 25h2v1h-2zM20 25h2v1h-2zM23 25h3v1h-3zM27 25h1v1h-1zM31 25h3v1h-3zM4 26h1v1h-1zM6 26h2v1h-2zM9 26h4v1h-4zM14 26h1v1h-1zM19 26h1v1h-1zM22 26h2v1h-2zM25 26h3v1h-3zM30 26h1v1h-1zM34 26h3v1h-3zM4 27h1v1h-1zM6 27h1v1h-1zM8 27h1v1h-1zM11 27h2v1h-2zM18 27h1v1h-1zM20 27h2v1h-2zM23 27h1v1h-1zM27 27h2v1h-2zM32 27h1v1h-1zM34 27h3v1h-3zM4 28h3v1h-3zM8 28h3v1h-3zM13 28h1v1h-1zM15 28h1v1h-1zM17 28h1v1h-1zM21 28h1v1h-1zM23 28h1v1h-1zM26 28h8v1h-8zM36 28h1v1h-1zM12 29h2v1h-2zM19 29h3v1h-3zM23 29h1v1h-1zM25 29h1v1h-1zM28 29h1v1h-1zM32 29h1v1h-1zM34 29h1v1h-1zM4 30h7v1h-7zM12 30h7v1h-7zM20 30h1v1h-1zM23 30h2v1h-2zM27 30h2v1h-2zM30 30h1v1h-1zM32 30h1v1h-1zM4 31h1v1h-1zM10 31h1v1h-1zM14 31h1v1h-1zM18 31h2v1h-2zM23 31h1v1h-1zM27 31h2v1h-2zM32 31h4v1h-4zM4 32h1v1h-1zM6 32h3v1h-3zM10 32h1v1h-1zM12 32h1v1h-1zM15 32h1v1h-1zM17 32h1v1h-1zM19 32h3v1h-3zM23 32h3v1h-3zM27 32h7v1h-7zM35 32h1v1h-1zM4 33h1v1h-1zM6 33h3v1h-3zM10 33h1v1h-1zM12 33h2v1h-2zM16 33h1v1h-1zM19 33h1v1h-1zM21 33h4v1h-4zM26 33h2v1h-2zM29 33h1v1h-1zM31 33h1v1h-1zM34 33h1v1h-1zM36 33h1v1h-1zM4 34h1v1h-1zM6 34h3v1h-3zM10 34h1v1h-1zM16 34h3v1h-3zM20 34h1v1h-1zM23 34h1v1h-1zM32 34h1v1h-1zM34 34h3v1h-3zM4 35h1v1h-1zM10 35h1v1h-1zM13 35h1v1h-1zM19 35h1v1h-1zM22 35h1v1h-1zM34 35h3v1h-3zM4 36h7v1h-7zM14 36h2v1h-2zM18 36h1v1h-1zM20 36h1v1h-1zM22 36h2v1h-2zM27 36h3v1h-3zM32 36h1v1h-1z"/></svg></div>
+    <div class="share-btns" id="share-btns">
+      <button class="btn btn-line" type="button" id="share-btn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg><span>Share</span></button>
+      <button class="btn btn-line" type="button" id="copy-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg><span id="copy-label">Copy link</span></button>
+    </div>
+    <p class="sr" id="copy-status" role="status" aria-live="polite"></p>
+  </section>
+
+  <footer class="foot">
+    <p>H ARBAB PTY LTD &bull; Trading as SmallNetworks &bull; <span style="white-space:nowrap">ABN 81 702 812 824</span></p>
+    <p style="margin-top:6px"><a href="https://smallnetworks.com.au">Visit the SmallNetworks website</a></p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var CARD_URL = 'https://smallnetworks.com.au/card/';
+  var shareBtn = document.getElementById('share-btn');
+  var copyBtn = document.getElementById('copy-btn');
+  var copyLabel = document.getElementById('copy-label');
+  var status = document.getElementById('copy-status');
+  var wrap = document.getElementById('share-btns');
+
+  if (navigator.share) {
+    shareBtn.hidden = false;
+    shareBtn.addEventListener('click', function () {
+      navigator.share({ title: 'Hasan Arbab | SmallNetworks', text: 'My digital business card', url: CARD_URL }).catch(function () {});
+    });
+  } else {
+    wrap.className += ' one';
+  }
+
+  function done() {
+    copyLabel.textContent = 'Link copied';
+    status.textContent = 'Link copied';
+    setTimeout(function () { copyLabel.textContent = 'Copy link'; status.textContent = ''; }, 2200);
+  }
+  function fallbackCopy() {
+    var t = document.createElement('textarea');
+    t.value = CARD_URL; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+    document.body.appendChild(t); t.select();
+    try { document.execCommand('copy'); done(); } catch (e) { copyLabel.textContent = CARD_URL; }
+    document.body.removeChild(t);
+  }
+  copyBtn.addEventListener('click', function () {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(CARD_URL).then(done, fallbackCopy);
+    } else { fallbackCopy(); }
+  });
+})();
+</script>
+</body>
+</html>
